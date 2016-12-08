@@ -300,9 +300,7 @@ class AutoComplete extends Component {
       case 'enter':
         this.close();
         const searchText = this.state.searchText;
-        if (searchText !== '') {
-          this.props.onNewRequest(searchText, -1);
-        }
+        this.props.onNewRequest(searchText, -1);
         break;
 
       case 'esc':
